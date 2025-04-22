@@ -53,3 +53,6 @@ This initial report include typical data understanding, data preparation, visual
 - Create models with DecisionTree, KNN, SVC and ensemble classifiers
 - Apply grid search on model hyperperameters
 - Additional visualization
+
+
+The jupyter file is weatherAUS.ipynb
