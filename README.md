@@ -83,6 +83,7 @@ There are 4 tables, one for each model type. Entries in a table correspond to di
 - "LogisticRegression Perth T03", LogisticRegression with custom prediction threshold 0.3 instead of the default 0.5
 - "SVM Perth Target T03", SVM model with TargetEncoder and custom threshold 0.3
 - "RandomForest Perth Target Balanced T03", RandomForest model with TargetEncoder, class_weight='balanced' and custom threshold 0.3
+- "LogisticRegression Perth Reduced Target", LogisticRegression with reduced dataset(143 instead of 549) and TargetEncoder
 <br>
 <br>
 
@@ -104,6 +105,7 @@ Switching to the custom metric,
 I also observed:
 - models with **class_weight='balanced'** perform better for LogisticReGression and SVM, but RandomForest models have the opposite that models **without** class_weight='balanced' do better
 - switching to **TargetEncoder** does help for most models, e.g. "RandomForest Perth Balanced T03" vs "RandomForest Perth Target Balanced T03" with	0.844553 and 0.858966 or "LogisticRegression Perth Balanced T03" vs "LogisticRegression Perth Target Balanced T03" with 0.857889 and 0.868329.
+- As mentioned earlier **reduced** dataset (143 instead of 549) has very small impact on the results
  
 
 
