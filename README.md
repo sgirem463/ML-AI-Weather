@@ -247,6 +247,11 @@ Deialed list of important features can be found in the Jupyter notebook
 
 The jupyter file is weatherAUS.ipynb
 
+## Next Steps
+A few things can be tried to optimize the models:
+- Reduce the feature set more aggressively, potentially different reduced datasets for different classifiers
+- More grid searches with finer granularity to locate the best hyperparameters
+- Use Neural Network to see if it can sqeeze more performance
 
 ## Appendix
 
