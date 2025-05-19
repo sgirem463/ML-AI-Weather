@@ -61,7 +61,7 @@ Quite a few techniques are used to optimize prediction models:
 ### Last attempt - reducing the number of features
 There are 549 features in the dataset with TargetEncoder, that is a lot, overfitting might have happened. Reducing the bumber of features could help address overfitting if it exists. I selected the most important 50 features from each of the LogisticRegression, SVM, RandomForest and GradientBoosting models, got the union (through the Python set() operation) of them to form a reduced feature set.
 
-I got 143 features in the reduced feature set, 26% of the original one, after retraining the model I didn't see much difference in performance, details can be found in the last two rows of the 4 performance tables in the following sections.
+I got 143 features in the reduced feature set, 26% of the original one, after retraining 4 models I didn't see much difference in performance, details can be found in the last two rows of the 4 performance tables in the following sections.
 
 Following sections have deatils on these optimizations.
 
@@ -247,3 +247,12 @@ The jupyter file is weatherAUS.ipynb
 
 
 ## Appendix
+
+Plots are created throughout the projects, the following are another two plots that are more interesting,
+- the first one is accuracy at different max_features when n_estimators is fixed at 18 and 115
+- the second one is accuracy at different n_estimators when max_features is fixed at 3 and 45
+
+
+![](RandomForest_features_accuracy.png)
+
+![](RandomForest_nEstimators_accuracy.png)
